@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --red-bg-color: #ff7a7a;
+    --green-color: hsl(154, 59%, 51%);
+    --blue-color: hsl(248, 32%, 49%);
+    --dark-blue-color: hsl(249, 10%, 26%);
+    --grayish-color: hsl(246, 25%, 77%);
+}
+/* Remove default padding */
+body,
+h1,
+h2,
+p,
+div,
+span,
+input,
+label {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--red-bg-color);
+    background-image: url('../images/bg-intro-desktop.png');
+    color: #fff;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.signup-wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 140px;
+    justify-content: space-between;
+}
+.signup-txt{
+    margin-top: 100px;
+    padding: 30px;
+}
+.signup-txt h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.signup-form{
+    margin-top: 20px;
+}
+.form-header{
+    background: var(--blue-color);
+    height: 50px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px -1px #a3a5ae9d;
+
+
+}
+.form-header p{
+    font-weight: 600;
+}
+.form-header span{
+    font-weight: 300;
+}
+
+.form-wrapper{
+    background-color: #fff;
+    height: 450px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.form-group{
+
+}
+.form-group input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 1px var(--dark-blue-color);
+    font-size: 16px;
+    outline: none;
+}
+.form-group  input:focus{
+    border: solid 2px var(--blue-color);
+}
+.form-group button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--green-color);
+    color: #fff;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px -1px hsl(229, 6%, 66%);
+
+}
+.terms-txt{
+    color: var(--dark-blue-color);
+    font-size: 13px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
+}
+.terms-txt span{
+    color: var(--red-bg-color);
+    font-weight: 600;
+}
