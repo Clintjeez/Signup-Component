@@ -84,7 +84,6 @@ body{
 
 .form-wrapper{
     background-color: #fff;
-    height: 450px;
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
@@ -102,9 +101,16 @@ body{
     border: solid 1px var(--dark-blue-color);
     font-size: 16px;
     outline: none;
+    
 }
 .form-group  input:focus{
     border: solid 2px var(--blue-color);
+}
+.errors{
+    border: solid 2px #ff0000!important;
+    background: url('../images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .form-group button{
     width: 100%;
@@ -119,6 +125,15 @@ body{
     box-shadow: 0 3px 10px -1px hsl(229, 6%, 66%);
 
 }
+.form-group .errors-txt{
+    color: red;
+    font-size: 13px;
+    font-weight: 200;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
 .terms-txt{
     color: var(--dark-blue-color);
     font-size: 13px;
