@@ -29,7 +29,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-size: 16px;
@@ -72,8 +71,6 @@ body{
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 3px 10px -1px #a3a5ae9d;
-
-
 }
 .form-header p{
     font-weight: 600;
@@ -144,4 +141,29 @@ body{
 .terms-txt span{
     color: var(--red-bg-color);
     font-weight: 600;
+}
+footer{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    padding: 20px;
+}
+@media(max-width:900px){
+    .signup-wrapper{
+        grid-template-columns: 100%;
+        margin-top: 40px;
+    }
+    .signup-txt{
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .signup-txt h1{
+        font-size: 25px;
+    }
+
+    .form-header{
+        height: 65px;
+        font-size: 15px;
+    }
 }

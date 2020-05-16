@@ -50,37 +50,10 @@ class Signup extends React.Component {
       formIsValid = false;
       errors["email"] = "Looks like this not an email";
     }
-    // if (typeof fields["email"] !== "undefined") {
-    //   let lastAtPos = fields["email"].lastIndexOf("@");
-    //   let lastDotPos = fields["email"].lastIndexOf(".");
-    //   if (
-    //     !(
-    //       lastAtPos < lastDotPos &&
-    //       lastAtPos > 0 &&
-    //       fields["email"].IndexOf("@@") == -1 &&
-    //       lastDotPos > 2 &&
-    //       fields["email"].length - lastDotPos > 2
-    //     )
-    //   ) {
-    //     formIsValid = false;
-    //     errors["email"] = "Email is not valid";
-    //   }
-    // }
+  
 
     this.setState({ errors: errors });
     return formIsValid;
-  }
-
-  // Handle form submit
-  contactSubmit(e) {
-    e.preventDefault();
-
-    if (this.handleValidation()) {
-      this.setState({ buttonTxt: "Form submitted" });
-     
-    } else {
-      this.setState({ buttonTxt: "Form has errors" });
-    }
   }
 
   handleChange(field, e) {
@@ -89,6 +62,19 @@ class Signup extends React.Component {
     this.setState({ fields });
   }
 
+
+  // Handle form submit
+  contactSubmit(e) {
+    e.preventDefault();
+   
+    if (this.handleValidation()) {
+      this.setState({ buttonTxt: "Form submitted" });
+    } else {
+      this.setState({ buttonTxt: "Form has errors" });
+    }
+  }
+
+ 
   render() {
     return (
       <div className="Signup">
@@ -182,6 +168,12 @@ class Signup extends React.Component {
             </div>
           </div>
         </div>
+        <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
       </div>
     );
   }
