@@ -171,7 +171,7 @@ class Signup extends React.Component {
         <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Clintjeez/Signup-Component">Clinton James</a>.
     </p>
   </footer>
       </div>
